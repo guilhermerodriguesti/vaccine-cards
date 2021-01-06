@@ -1,0 +1,12 @@
+language: java
+jdk:
+  - oraclejdk8
+  
+deploy:
+   edge: true
+   provider: cloudfoundry
+   username: $CF_USER
+   password: $CF_PWD
+   api: $CF_API
+   organization: guilhermerodriguesti
+   space: dev
